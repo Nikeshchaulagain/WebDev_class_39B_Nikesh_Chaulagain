@@ -4,22 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Nikesh Chaulagain</h1>
-    <h2>Ceo of C39B</h2>
-    <nav><a href="#Introduction">Introduction</a>
+    <header>
+        <h1>Nikesh Chaulagain</h1>
+        <h2>Ceo of C39B</h2>
+    
+    <nav>
+    <a href="#Introduction">Introduction</a>
     <a href="#Experience">Experience</a>
     <a href="#Skills">Skills</a>
     <a href="#Projects">Projects</a>
     </nav>
-
-    <p>
-
-        <iframe src="https://www.youtube.com/embed/pR3ynBB1Ins?list=RDpR3ynBB1Ins&start_radio=1" frameborder="0"></iframe>
-    </p>
+    </header>
+<p>
+        <div class="video-container">
+    <iframe 
+        src="https://www.youtube.com/embed/pR3ynBB1Ins"
+        title="YouTube video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+</div>
+</p>
     <h3>Introduction</h3>
-    <p>
+    <p class="introduction">
    
         Hello! My name is <strong>Nikesh Chaulagain</strong>. I am a 
         <em>creative and motivated computing student</em> with an interest 
@@ -55,7 +65,7 @@
     </p>
     <p>
         <h3>Skills</h3>
-        <table border="1">
+        <table>
             <thead>
                 <tr>
                     <th>Skill</th>
@@ -90,6 +100,58 @@
             <li>Web Development Projects</li>
         </ul>
     </section>
-<iframe src="https://www.youtube.com/embed/pR3ynBB1Ins?list=RDpR3ynBB1Ins&start_radio=1" frameborder="0"></iframe>
+<div class="video-container">
+    <iframe 
+        src="https://www.youtube.com/embed/pR3ynBB1Ins"
+        title="YouTube video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<section class="contact-form">
+    <h3>Contact Form</h3>
+
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label>Gender</label>
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="gender" value="male">
+                Male
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="female">
+                Female
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="other">
+                Other
+            </label>
+        </div>
+
+        <label for="role">Role</label>
+        <select id="role" name="role">
+            <option value="">Select your role</option>
+            <option value="student">Student</option>
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <option value="employer">Employer</option>
+            <option value="other">Other</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
 </body>
 </html>
